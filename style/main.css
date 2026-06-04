@@ -1,9 +1,52 @@
-*{
-  
-
+* {
   margin: 0;
   padding: 0;
 }
-.container {
-  background-color: #b12e18;
+img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+menu{
+   background-color: rgba(140, 170, 123, 0.644);
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+    
+}
+  
+.menu-principal{
+    background-color: rgb(5, 3, 5);
+    display: flex;
+    flex-direction: row;
+}
+.menu-principal img{
+    width: 1600px;
+    height: 739px;
+    object-fit: cover;
+}
+
+.menu-inferior{
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+}
+.menu-inferior a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.variados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.variados > * {
+    padding:1rem;
 }
