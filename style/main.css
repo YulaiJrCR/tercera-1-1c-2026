@@ -16,7 +16,6 @@ menu{
    align-items: center;
     
 }
-  
 .menu-principal{
     background-color: rgb(5, 3, 5);
     display: flex;
@@ -27,8 +26,7 @@ menu{
     height: 739px;
     object-fit: cover;
 }
-
-.menu-inferior{
+.menu-superior{
     background-color: rgb(12, 12, 12);
     width: 100%;
     display: flex;
@@ -36,13 +34,12 @@ menu{
     justify-content: center;
     align-items: center;
 }
-.menu-inferior a{
+.menu-superior a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 10px;
 }
-
 .variados {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,3 +47,74 @@ menu{
 .variados > * {
     padding:1rem;
 }
+
+
+@media (max-width: 768px) {
+
+    .menu-principal img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .menu-superior {
+        background-color: rgb(0, 0, 0);
+        height: 85px;
+        border: #ffffff solid 5px;
+        border-radius: 10px;
+    }
+
+    .menu-superior {
+        width: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menu-superior a{
+        display: none  ;
+    }
+
+    .menu-container {
+        width: auto;
+        margin-left: auto;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .menu-container .hamburger-icon {
+        background-color: rgb(0, 0, 0);
+        width: 35px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+
+    .menu-container .hamburger-icon span {
+        background-color: rgb(248, 237, 237);
+        height: 4px;
+        width: 100%;
+        display: block;
+        border-radius: 2px;
+        
+    }
+  
+    .menu-superior-open{
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;          
+        background-color: rgb(0, 0, 0);
+    }
+    .menu-superior-open a {
+        display: block;        
+        width: 100%;
+      }
+
+
+
+}
+
