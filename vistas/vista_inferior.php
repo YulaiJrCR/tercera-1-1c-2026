@@ -10,7 +10,7 @@
 
 
 
-        <script src="./scripts/hamburger-icon.js"></script>
+        <script src="<?php echo $pathPrefix; ?>/scripts/hamburger-icon.js"></script>
 
     </body>
 </html>
