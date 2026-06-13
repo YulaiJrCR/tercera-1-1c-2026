@@ -13,6 +13,8 @@
         <img src="<?php echo $pathPrefix; ?>/img/4.jpeg" alt="menu principal">
     </div>
 </menu>
+<div class="main-accordion-container"></div>
+
 
 <?php require_once __DIR__ . "/vistas/vista_inferior.php"; ?>
 

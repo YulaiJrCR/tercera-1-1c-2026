@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html, body {
+    overflow-x: hidden;
+}
 body{
     font-family: Arial, sans-serif;
     background-color: rgb(140, 170, 123, 0.644);
@@ -14,7 +17,7 @@ img{
 button.openModal{
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    border: 5px solid #000000;
+    border: 5px solid #628325;
     padding: 0;
     font-size: 16px;
     cursor: pointer;    
@@ -110,7 +113,7 @@ menu{
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .menu-superior a{
@@ -172,7 +175,28 @@ menu{
         padding-left: 3.5rem;
         grid-template-columns: 1fr;
     }
-
+    /* Mobile centering overrides */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .variados {
+        padding-left: 0;
+        margin: 0 auto;
+        max-width: 480px;
+        justify-items: center;
+    }
+    .variados > img {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    /* restored: keep hamburger aligned right on mobile */
+    .modal-inner {
+        width: 90%;
+        max-width: 380px;
+    }
 }
 
 .modal-inner{
@@ -219,4 +243,25 @@ menu{
     cursor: pointer;
     border-radius: 5px;
     margin-top: 15px;
+}
+
+.main-accordion-container{
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 1rem;
+}
+.accordion-desc {
+    display: none;
+}
+.tab-active .accordion-desc {
+    display: block;
+    padding-left: 2rem;
+    color: #ffffff;
+    background:rgba(128, 155, 112, 0.644);
+}
+.accordion-title {
+    cursor: pointer;
+    
 }
