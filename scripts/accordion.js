@@ -1,4 +1,5 @@
 console.log('Cargando Accordion...');
+
 const dataAccordion = [{
   "title": "¿Qué son los Deportes Electrónicos?",
   "desc": "Son deportes electrónicos, que se pueden practicar desde una PC o Consola de Videojuegos."

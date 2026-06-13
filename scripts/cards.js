@@ -2,45 +2,59 @@ console.log('Cargando Cards...');
 
 const dataCards = [{
   "title": "Juega solo o con amigos",
-  "url_image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/11/15/18/league-of-legends.jpg?w968h681",
+  "url_image": "../img/variados 1.jpeg",
   "desc": "No es necesario ser parte de un equipo, aunque no está de más un poco de ayuda.",
-  "cta": "Show More",
-  "link": "https://www.edsurge.com/news/2019-01-22-educators-share-how-video-games-can-help-kids-build-sel-skills"
+  "cta": "Mostrar imagen",
+  "link": "../img/variados 1.jpeg"
 },
 {
   "title": "Diferentes modos de juego",
-  "url_image": "https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/sites/4/2019/06/20165237/tft1.png",
+  "url_image": "../img/variados 2.jpeg",
   "desc": "Modo Clásico, Dominion, Snowdown y otros modos de juego, todo depende de tu tipo de estretegia y tus mejores habilidades.",
-  "cta": "Show More",
-  "link": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwipq6zInbblAhUInFkKHSYwCMkQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.wsj.com%2Farticles%2Fwhen-a-passion-for-videogames-helps-land-that-job-11551888001&psig=AOvVaw2cvigcMN-U27d5xC22PpZw&ust=1572050615969380"
+  "cta": "Mostrar imagen",
+  "link": "../img/variados 2.jpeg"
 },
 {
   "title": "Participa en las eliminatorias regionales",
-  "url_image": "https://d392eissrffsyf.cloudfront.net/LAN/Worlds%202015/CuartosDeFinal.jpg",
+  "url_image": "../img/variados 3.jpeg",
   "desc": "Escala desde abajo, no es necesario enfrentarse a los mejores desde el promcipio, pero si debes ser el mejor para poder clasificar.",
-  "cta": "Show More",
-  "link": "https://www.edsurge.com/news/2019-01-22-educators-share-how-video-games-can-help-kids-build-sel-skills"
+  "cta": "Mostrar imagen",
+  "link": "../img/variados 3.jpeg"
 },
 {
   "title": "Personaliza tus campeones favoritos con skins",
-  "url_image": "https://esports.eldesmarque.com/wp-content/uploads/2019/09/Sin-t%C3%ADtadsfaulo.jpg",
+  "url_image": "../img/variados 4.jpeg",
   "desc": "Ser un campeón tiene sus beneficios, escoge y presume tus skins personalizados!",
-  "cta": "Show More",
-  "link": "https://www.edsurge.com/news/2019-01-22-educators-share-how-video-games-can-help-kids-build-sel-skills"
+  "cta": "Mostrar imagen",
+  "link": "../img/variados 4.jpeg"
 },
 {
   "title": "Posicionate en los Ranking de la temporada",
-  "url_image": "https://bolavip.com/export/sites/bolavip/img/2019/01/23/image_2.png_1056961943.png",
+  "url_image": "../img/variados 5.jpeg",
   "desc": "Más y más reconocimientos, si tú o tu equipo se convierte en los mejores, todos lo sabrán!",
-  "cta": "Show More",
-  "link": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwipq6zInbblAhUInFkKHSYwCMkQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.wsj.com%2Farticles%2Fwhen-a-passion-for-videogames-helps-land-that-job-11551888001&psig=AOvVaw2cvigcMN-U27d5xC22PpZw&ust=1572050615969380"
+  "cta": "Mostrar imagen",
+  "link": "../img/variados 5.jpeg"
 },
 {
   "title": "Prueba la beta de TFT",
-  "url_image": "https://las.leagueoflegends.com/sites/default/files/styles/wide_medium/public/upload/tft_beta_pass_header.jpg?itok=-oVAgiAM",
+  "url_image": "../img/variados 6.jpeg",
   "desc": "¡Pase beta de TFT V.3 próximamente!",
-  "cta": "Show More",
-  "link": "https://las.leagueoflegends.com/es/news/game-updates/features/pase-beta-de-tft-v3-proximamente"
+  "cta": "Mostrar imagen",
+  "link": "../img/variados 6.jpeg"
+},
+{
+  "title": "Prueba la beta de TFT",
+  "url_image": "../img/variados 7.jpeg",
+  "desc": "¡Pase beta de TFT V.3 próximamente!",
+  "cta": "Mostrar imagen",
+  "link": "../img/variados 7.jpeg"
+},
+{
+  "title": "Prueba la beta de TFT",
+  "url_image": "../img/variados 8.jpeg",
+  "desc": "¡Pase beta de TFT V.3 próximamente!",
+  "cta": "Mostrar imagen",
+  "link": "../img/variados 8.jpeg"
 }];
 
 (function () {
@@ -66,18 +80,30 @@ const dataCards = [{
     },
 
     insertData: function (_self) {
+      let container = document.querySelector('.card-list');
+      if (!container) return;
       dataCards.map(function (item, index) {
-        document.querySelector('.card-list').insertAdjacentHTML('beforeend', _self.tplCardItem(item, index));
+        container.insertAdjacentHTML('beforeend', _self.tplCardItem(item, index));
       });
     },
 
     tplCardItem: function (item, index) {
+      let src = item.url_image || '';
+      if (!/^https?:\/\//i.test(src)) {
+        if (!src.startsWith('/') && !src.startsWith('../') && window.location.pathname.includes('/vistas/')) {
+          src = '../' + src;
+        }
+        // local images: prevent caching by adding a timestamp
+        src += (src.indexOf('?') === -1 ? '?' : '&') + 'v=' + Date.now();
+      }
       return (`<div class='card-item' id="card-number-${index}">
-            <img src="${item.url_image}"/>
+            <img src="${src}"/>
             <div class="card-info">
               <p class='card-title'>${item.title}</p>
               <p class='card-desc'>${item.desc}</p>
+              <div class="boton-cta">
               <a class='card-cta' target="blank" href="${item.link}">${item.cta}</a>
+              </div>
             </div>
           </div>`)
     },
@@ -85,3 +111,4 @@ const dataCards = [{
 
   CARD.init();
 })();
+show
