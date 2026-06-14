@@ -1,12 +1,9 @@
 {
     "items": [
-        { "image": "../img/animales 1.jpeg", "description": "Descripción del producto o imagen 1" },
-        { "image": "../img/animales 2.jpeg", "description": "Descripción del producto o imagen 2" },
-        { "image": "../img/animales 3.jpeg", "description": "Descripción del producto o imagen 3" },
-        { "image": "../img/animales 4.jpeg", "description": "Descripción del producto o imagen 4" },
-        { "image": "../img/animales 5.jpeg", "description": "Descripción del producto o imagen 5" },
-        { "image": "../img/animales 6.jpeg", "description": "Descripción del producto o imagen 6" },
-        { "image": "../img/animales 7.jpeg", "description": "Descripción del producto o imagen 7" },
-        { "image": "../img/animales 8.jpeg", "description": "Descripción del producto o imagen 8" }
+        { "image": "../img/animales 2.jpeg", "description": "Familia de osos ceramicos" },
+        { "image": "../img/animales 3.jpeg", "description": "Porta lapices o maceta de buho hecho de yeso ceramico" },
+        { "image": "../img/animales 5.jpeg", "description": "Maceta para suculentas en forma de Oso Perezoso de yeso ceramico" },
+        { "image": "../img/animales 6.jpeg", "description": "Perritos de yeso ceramico en diferentes colores" },
+        { "image": "../img/animales 8.jpeg", "description": "Porta maceta de carrito de yeso ceramico" }
     ]
 }

@@ -1,13 +1,11 @@
 {
   "items": [
-    { "image": "../img/angeles 1.jpeg", "description": "Descripción del producto o imagen 1" },
-    { "image": "../img/angeles 2.jpeg", "description": "Descripción del producto o imagen 2" },
-    { "image": "../img/angeles 3.jpeg", "description": "Descripción del producto o imagen 3" },
-    { "image": "../img/angeles 4.jpeg", "description": "Descripción del producto o imagen 4" },
-    { "image": "../img/angeles 5.jpeg", "description": "Descripción del producto o imagen 5" },
-    { "image": "../img/angeles 6.jpeg", "description": "Descripción del producto o imagen 6" },
-    { "image": "../img/angeles 7.jpeg", "description": "Descripción del producto o imagen 7" },
-    { "image": "../img/angeles 8.jpeg", "description": "Descripción del producto o imagen 8" },
-    { "image": "../img/angeles 9.jpeg", "description": "Descripción del producto o imagen 9" }
+    { "image": "../img/angeles 1.jpeg", "description": "Sagrada familia de yeso ceramico" },
+    { "image": "../img/angeles 2.jpeg", "description": "Angel de yeso ceramico" },
+    { "image": "../img/angeles 3.jpeg", "description": "Set de angel y florero de yeso ceramico" },
+    { "image": "../img/angeles 4.jpeg", "description": "Set de angel con portabelas de yeso ceramico" },
+    { "image": "../img/angeles 5.jpeg", "description": "Variedad de la virgencita de guadalupe y osito" },
+    { "image": "../img/angeles 6.jpeg", "description": "Set de angel con joyero de yeso ceramico de distentos colores " },
+    { "image": "../img/angeles 9.jpeg", "description": "Trio de angeles de yeso ceramico" }
   ]
 }

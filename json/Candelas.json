@@ -1,8 +1,8 @@
 {
   "items": [
-    { "image": "../img/candelas 1.jpeg", "description": "Descripción del producto o imagen 1" },
-    { "image": "../img/candelas 2.jpeg", "description": "Descripción del producto o imagen 2" },
-    { "image": "../img/candelas 3.jpeg", "description": "Descripción del producto o imagen 3" },
-    { "image": "../img/candelas 4.jpeg", "description": "Descripción del producto o imagen 4" }
+    { "image": "../img/candelas 1.jpeg", "description": "Candela de cera flor de hielo" },
+    { "image": "../img/candelas 2.jpeg", "description": "Candela de gel inspirado en el mar" },
+    { "image": "../img/candelas 3.jpeg", "description": "Candela de cera de soya de animales marinos" },
+    { "image": "../img/candelas 4.jpeg", "description": "Candela de flor de hielo y cera de soya" }
   ]
 }

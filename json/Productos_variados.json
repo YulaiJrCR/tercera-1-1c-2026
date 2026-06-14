@@ -1,12 +1,10 @@
 {
   "items": [
-    { "image": "../img/variados 1.jpeg", "description": "Hola" },
-    { "image": "../img/variados 2.jpeg", "description": "Descripción del producto o imagen 2" },
-    { "image": "../img/variados 3.jpeg", "description": "Descripción del producto o imagen 3" },
-    { "image": "../img/variados 4.jpeg", "description": "Descripción del producto o imagen 4" },
-    { "image": "../img/variados 5.jpeg", "description": "Descripción del producto o imagen 5" },
-    { "image": "../img/variados 6.jpeg", "description": "Descripción del producto o imagen 6" },
-    { "image": "../img/variados 7.jpeg", "description": "Descripción del producto o imagen 7" },
-    { "image": "../img/variados 8.jpeg", "description": "Descripción del producto o imagen 8" }
+    { "image": "../img/variados 2.jpeg", "description": "Set decorativo de yeso ceramico y candelas de soya" },
+    { "image": "../img/variados 3.jpeg", "description": "Joyero para pulseras" },
+    { "image": "../img/variados 4.jpeg", "description": "Hoja decorativa de yeso ceramico de colores" },
+    { "image": "../img/variados 5.jpeg", "description": "Base decorativa de yeso ceramico" },
+    { "image": "../img/variados 6.jpeg", "description": "Candela de flor de cera de soya" },
+    { "image": "../img/variados 7.jpeg", "description": "Joyeros ceramicos en forma de concha en brocha seca" }
   ]
 }

@@ -277,6 +277,12 @@ menu{
         display: block;
         margin: 0 auto;
     }
+    /* Asegurar que la regla base img {width:320px} no aplique en móvil */
+    img {
+        width: auto !important;
+        max-width: 100%;
+        height: auto !important;
+    }
     .variados {
         padding-left: 0;
         margin: 0 auto;
@@ -304,6 +310,15 @@ menu{
      width: 80%;
      height: auto;
      margin-bottom: 20px;
+     object-fit: cover;
+     display: block;
+    }
+    .card-item img {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0 !important;
+        display: block;
+        object-fit: cover;
     }
 
     .card-title{
@@ -314,7 +329,7 @@ menu{
     }
     .boton-cta{
         width: auto;
-        height: 200px;
+        height: 100px;
         margin-right: 20px;
     }
     

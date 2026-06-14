@@ -1,46 +1,46 @@
 console.log('Cargando Cards...');
 
 const dataCards = [{
-  "title": "Juega solo o con amigos",
-  "url_image": "../img/variados 1.jpeg",
-  "desc": "No es necesario ser parte de un equipo, aunque no está de más un poco de ayuda.",
-  "cta": "Mostrar imagen",
-  "link": "../img/variados 1.jpeg"
-},
-{
-  "title": "Diferentes modos de juego",
-  "url_image": "../img/variados 2.jpeg",
-  "desc": "Modo Clásico, Dominion, Snowdown y otros modos de juego, todo depende de tu tipo de estretegia y tus mejores habilidades.",
-  "cta": "Mostrar imagen",
-  "link": "../img/variados 2.jpeg"
-},
-{
-  "title": "Participa en las eliminatorias regionales",
+  "title": "Concha de seramica",
   "url_image": "../img/variados 3.jpeg",
-  "desc": "Escala desde abajo, no es necesario enfrentarse a los mejores desde el promcipio, pero si debes ser el mejor para poder clasificar.",
+  "desc": "Concha hecha de seramica de yeso ceramico para guardar joyeria.",
   "cta": "Mostrar imagen",
   "link": "../img/variados 3.jpeg"
 },
 {
-  "title": "Personaliza tus campeones favoritos con skins",
+  "title": "El buho durmiente",
+  "url_image": "../img/animales 3.jpeg",
+  "desc": "Vaso de yeso ceramico de un buho que toma un descanso",
+  "cta": "Mostrar imagen",
+  "link": "../img/animales 3.jpeg"
+},
+{
+  "title": "Angel de ceramica",
+  "url_image": "../img/angeles 2.jpeg",
+  "desc": " Dulce angel de ceramica que sostiene un ramo de flores entregado con amor.",
+  "cta": "Mostrar imagen",
+  "link": "../img/angeles 2.jpeg"
+},
+{
+  "title": "Base en forma de hoja",
   "url_image": "../img/variados 4.jpeg",
-  "desc": "Ser un campeón tiene sus beneficios, escoge y presume tus skins personalizados!",
+  "desc": "Base de yeso ceramico pintada de diversos colores",
   "cta": "Mostrar imagen",
   "link": "../img/variados 4.jpeg"
 },
 {
-  "title": "Posicionate en los Ranking de la temporada",
-  "url_image": "../img/variados 5.jpeg",
-  "desc": "Más y más reconocimientos, si tú o tu equipo se convierte en los mejores, todos lo sabrán!",
+  "title": "Candela de arena ceramica",
+  "url_image": "../img/candelas 1.jpeg",
+  "desc": "Candela con forma de coco tropical con una flor decorativa",
   "cta": "Mostrar imagen",
-  "link": "../img/variados 5.jpeg"
+  "link": "../img/candelas 1.jpeg"
 },
 {
-  "title": "Prueba la beta de TFT",
-  "url_image": "../img/variados 6.jpeg",
-  "desc": "¡Pase beta de TFT V.3 próximamente!",
+  "title": "Maseta para suculentas",
+  "url_image": "../img/animales 5.jpeg",
+  "desc": "Un perezoso hecho de yeso seramico que se levanto con un corte de pelo peculiar",
   "cta": "Mostrar imagen",
-  "link": "../img/variados 6.jpeg"
+  "link": "../img/animales 5.jpeg"
 }];
 
 (function () {
