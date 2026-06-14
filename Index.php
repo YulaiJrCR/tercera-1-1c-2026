@@ -13,6 +13,10 @@
         <img src="<?php echo $pathPrefix; ?>/img/4.jpeg" alt="menu principal">
     </div>
 </menu>
+
+<div class="card-list">
+</div>
+
 <div class="main-accordion-container"></div>
 
 

@@ -3,11 +3,8 @@
             <h1>Productos variados</h1>
             <p>En esta sección encontrarás una variedad de productos para satisfacer tus necesidades.</p>
         </div>
-        
-        </div>
 
-        <div class="card-list">
-        </div>
+        <div class="variados"></div>
 
         <script src="<?php echo $pathPrefix; ?>/scripts/popUps.js"></script>
 

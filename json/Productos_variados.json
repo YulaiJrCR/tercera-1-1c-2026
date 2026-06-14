@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "image": "../img/variados 1.jpeg", "description": "Hola" },
+    { "image": "../img/variados 2.jpeg", "description": "Descripción del producto o imagen 2" },
+    { "image": "../img/variados 3.jpeg", "description": "Descripción del producto o imagen 3" },
+    { "image": "../img/variados 4.jpeg", "description": "Descripción del producto o imagen 4" },
+    { "image": "../img/variados 5.jpeg", "description": "Descripción del producto o imagen 5" },
+    { "image": "../img/variados 6.jpeg", "description": "Descripción del producto o imagen 6" },
+    { "image": "../img/variados 7.jpeg", "description": "Descripción del producto o imagen 7" },
+    { "image": "../img/variados 8.jpeg", "description": "Descripción del producto o imagen 8" }
+  ]
+}

@@ -85,6 +85,32 @@ menu{
     display: block;
 }
 
+.variados-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item-description {
+    color: #111;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 320px;
+    padding: 0.5rem 0;
+    display: none;
+}
+
+.item-description.visible {
+    display: block;
+}
+
+.modal-description {
+    color: #fff;
+    font-size: 18px;
+    margin: 0.75rem 0;
+    text-align: center;
+}
+
 .texto-principal{
     background-color: rgba(140, 170, 123, 0.644);
     color: rgb(255, 255, 255);
@@ -155,7 +181,7 @@ menu{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
 }
 .card-cta:hover{
@@ -287,9 +313,9 @@ menu{
         font-size: 20;
     }
     .boton-cta{
-            width: auto;
-            height: 200px;
-            margin-right: 20px;
+        width: auto;
+        height: 200px;
+        margin-right: 20px;
     }
     
 }

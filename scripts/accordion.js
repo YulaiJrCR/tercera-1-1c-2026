@@ -51,7 +51,12 @@ const dataAccordion = [{
   
       insertData: function (_self) {
         dataAccordion.map(function (item, index) {
-          document.querySelector('.main-accordion-container').insertAdjacentHTML('beforeend', _self.tplAccordionItem(item));
+          let container = document.querySelector('.main-accordion-container')
+          if (container == null){
+            console.warn("container es nulo")
+            return
+          }
+          container.insertAdjacentHTML('beforeend', _self.tplAccordionItem(item));
         });
       },
 

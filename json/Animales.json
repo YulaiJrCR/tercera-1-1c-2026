@@ -1,0 +1,12 @@
+{
+    "items": [
+        { "image": "../img/animales 1.jpeg", "description": "Descripción del producto o imagen 1" },
+        { "image": "../img/animales 2.jpeg", "description": "Descripción del producto o imagen 2" },
+        { "image": "../img/animales 3.jpeg", "description": "Descripción del producto o imagen 3" },
+        { "image": "../img/animales 4.jpeg", "description": "Descripción del producto o imagen 4" },
+        { "image": "../img/animales 5.jpeg", "description": "Descripción del producto o imagen 5" },
+        { "image": "../img/animales 6.jpeg", "description": "Descripción del producto o imagen 6" },
+        { "image": "../img/animales 7.jpeg", "description": "Descripción del producto o imagen 7" },
+        { "image": "../img/animales 8.jpeg", "description": "Descripción del producto o imagen 8" }
+    ]
+}

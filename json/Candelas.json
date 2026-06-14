@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "image": "../img/candelas 1.jpeg", "description": "Descripción del producto o imagen 1" },
+    { "image": "../img/candelas 2.jpeg", "description": "Descripción del producto o imagen 2" },
+    { "image": "../img/candelas 3.jpeg", "description": "Descripción del producto o imagen 3" },
+    { "image": "../img/candelas 4.jpeg", "description": "Descripción del producto o imagen 4" }
+  ]
+}

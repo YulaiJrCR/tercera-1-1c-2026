@@ -41,20 +41,6 @@ const dataCards = [{
   "desc": "¡Pase beta de TFT V.3 próximamente!",
   "cta": "Mostrar imagen",
   "link": "../img/variados 6.jpeg"
-},
-{
-  "title": "Prueba la beta de TFT",
-  "url_image": "../img/variados 7.jpeg",
-  "desc": "¡Pase beta de TFT V.3 próximamente!",
-  "cta": "Mostrar imagen",
-  "link": "../img/variados 7.jpeg"
-},
-{
-  "title": "Prueba la beta de TFT",
-  "url_image": "../img/variados 8.jpeg",
-  "desc": "¡Pase beta de TFT V.3 próximamente!",
-  "cta": "Mostrar imagen",
-  "link": "../img/variados 8.jpeg"
 }];
 
 (function () {
@@ -89,20 +75,33 @@ const dataCards = [{
 
     tplCardItem: function (item, index) {
       let src = item.url_image || '';
+      let link = item.link || '';
+
       if (!/^https?:\/\//i.test(src)) {
-        if (!src.startsWith('/') && !src.startsWith('../') && window.location.pathname.includes('/vistas/')) {
+        if (src.startsWith('../') && !window.location.pathname.includes('/vistas/')) {
+          src = src.replace(/^\.\.\//, '');
+        } else if (!src.startsWith('/') && !src.startsWith('../') && window.location.pathname.includes('/vistas/')) {
           src = '../' + src;
         }
         // local images: prevent caching by adding a timestamp
         src += (src.indexOf('?') === -1 ? '?' : '&') + 'v=' + Date.now();
       }
+
+      if (!/^https?:\/\//i.test(link) && !link.startsWith('/')) {
+        if (link.startsWith('../') && !window.location.pathname.includes('/vistas/')) {
+          link = link.replace(/^\.\.\//, '');
+        } else if (!link.startsWith('../') && window.location.pathname.includes('/vistas/')) {
+          link = '../' + link;
+        }
+      }
+
       return (`<div class='card-item' id="card-number-${index}">
             <img src="${src}"/>
             <div class="card-info">
               <p class='card-title'>${item.title}</p>
               <p class='card-desc'>${item.desc}</p>
               <div class="boton-cta">
-              <a class='card-cta' target="blank" href="${item.link}">${item.cta}</a>
+              <a class='card-cta' target="blank" href="${link}">${item.cta}</a>
               </div>
             </div>
           </div>`)
@@ -111,4 +110,3 @@ const dataCards = [{
 
   CARD.init();
 })();
-show

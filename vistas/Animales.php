@@ -31,6 +31,7 @@
             <div class="modal" id="modal">
                 <div class="modal-inner">
                     <img id="modalImage" src="../img/animales 1.jpeg" alt=" animal 1">
+
                     <button class="closeModal">Cerrar</button>
                 </div>
             </div>
